@@ -11,6 +11,9 @@ public class CookiesCollected : MonoBehaviour
             GetComponent<SpriteRenderer>().enabled = false;
             // If the cookie is a child of another object, you can use
             gameObject.transform.GetChild(0).gameObject.SetActive(true);
+
+            FindObjectOfType<CookiesManager>().AllCookiesCollected();
+            
             Destroy(gameObject, 0.5f);
         }
     }
