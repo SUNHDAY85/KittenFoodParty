@@ -12,7 +12,7 @@ public class CookiesCollected : MonoBehaviour
             // If the cookie is a child of another object, you can use
             gameObject.transform.GetChild(0).gameObject.SetActive(true);
 
-            FindObjectOfType<CookiesManager>().AllCookiesCollected();
+            FindObjectOfType<CookiesManager>().CollectCookie();
             
             Destroy(gameObject, 0.5f);
         }
