@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 468365107}
   - component: {fileID: 468365106}
   m_Layer: 5
-  m_Name: CookieName
+  m_Name: GoldenCookieName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -636,7 +636,7 @@ GameObject:
   - component: {fileID: 850152586}
   - component: {fileID: 850152585}
   m_Layer: 5
-  m_Name: Collected
+  m_Name: CookiesCollected
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -904,7 +904,7 @@ GameObject:
   - component: {fileID: 1104038112}
   - component: {fileID: 1104038111}
   m_Layer: 5
-  m_Name: Total
+  m_Name: TotalCookies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1106,7 +1106,7 @@ GameObject:
   - component: {fileID: 1657836613}
   - component: {fileID: 1657836612}
   m_Layer: 5
-  m_Name: Total
+  m_Name: TotalGoldenCookies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1418,7 +1418,7 @@ GameObject:
   - component: {fileID: 2141738338}
   - component: {fileID: 2141738337}
   m_Layer: 5
-  m_Name: Collected
+  m_Name: GoldenCookiesCollected
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
