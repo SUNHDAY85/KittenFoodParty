@@ -25,14 +25,22 @@ public class CookiesManager : MonoBehaviour
         collectedFishCookies = 0; // Inicializamos el contador de galletas recolectadas a 0
 
         goldenCookie.SetActive(false); // Asegúrate de que la galleta dorada esté desactivada al inicio
-        UpdateCookiesTextMeshPro(); // Actualiza los textos al inicio
+        UpdateCookiesTextMesh(); // Actualiza los textos al inicio
     }
 
-    public void UpdateCookiesTextMeshPro()
+    public void UpdateCookiesTextMesh()
     {
-        // Actualiza el texto en la UI con el total de galletas y las recolectadas
-        totalCookiesText.text = "Total Cookies: " + totalCookiesinScene;
-        cookiesCollectedText.text = "Collected: " + collectedFishCookies;
+        if (totalCookiesText != null && cookiesCollectedText != null)
+        {
+            // Actualiza el texto en la UI con el total de galletas y las recolectadas
+            totalCookiesText.text = "Total Cookies: " + totalCookiesinScene;
+            cookiesCollectedText.text = "Collected: " + collectedFishCookies;
+        }
+        
+        else
+        {
+            Debug.LogWarning("Please assign the TextMeshPro objects in the Inspector!");
+        }
     }
 
     public void CollectCookie()
@@ -43,7 +51,7 @@ public class CookiesManager : MonoBehaviour
             Debug.Log("Cookies collected: " + collectedFishCookies);
 
             // Actualiza el contador de texto después de recolectar una galleta
-            UpdateCookiesTextMeshPro();
+            UpdateCookiesTextMesh();
 
             // Si ya se recolectaron todas las galletas, mostramos la galleta dorada
             if (collectedFishCookies == totalFishCookies)
